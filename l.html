@@ -1,0 +1,118 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+  font-family: Arial, sans-serif;
+}
+
+/* Loader container */
+.loader{
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-left: 30PX;
+}
+
+/* Outer ring */
+.loader::before{
+  content:"";
+  position:absolute;
+  inset:0;  
+  border-radius:50%;
+  border:4px dashed #2dd4ff;
+  animation: spin 6s linear infinite;
+  opacity:0.6;
+}
+
+/* Inner ring */
+.loader::after{
+  content:"";
+  position:absolute;
+  inset:20px;
+  border-radius:50%;
+  border:4px solid transparent;
+  border-top:4px solid #2dd4ff;
+  border-bottom:4px solid #2dd4ff;
+  animation: spinReverse 2s linear infinite;
+}
+
+/* Text */
+.loading-text{
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#7dd3fc;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* Animations */
+@keyframes spin{
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg); }
+}
+
+@keyframes spinReverse{
+  0%{ transform: rotate(360deg); }
+  100%{ transform: rotate(0deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="loader">
+  <div class="loading-text">HIJECKING</div>
+</div>
+        <style>
+            #body{
+                background-color: black;
+            }
+        </style>
+
+        <div id = "loader">
+            <div class="spinner"></div>
+            <h1 STYLE = "font-size:30PX;margin-top: 100PX;"></h1>       
+        </div>
+    </head>
+
+
+    <body style = "background-image: url(hih.jpg);background-repeat: no-repeat;background-size: cover;">
+    <script>
+        setTimeout(()=>{
+            window.location.href="h.html";
+},5000);
+
+        
+    </script>
+
+<audio id = "soun" src = "mp3.mp3"></audio>
+<script>
+  const sound = document.getElementById("soun");
+
+
+  sound.play();
+</script>
+
+
+
+
+
+
+
+
+    <!-- <B><h1 style ="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-left: px;font-size: 50px;margin-top: -100px;background:linear-gradient(90deg,);border: 5px solid ;border-left:-10px ;text-align: center;border-color: blur;filter:;padding: 10px;border-radius: 20px;color:red;">WINNER WINNER CHICKEN DINNER</h1>
+    </B></body> -->
+    </html>

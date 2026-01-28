@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color:;
+            display :flex;
+background-image:url(opo.jpg);
+            
+        }
+        H1{
+            color: blue;
+            display: FLEX;
+            text-align: center;
+            font-size: 50PX;
+            font-weight: 800;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 100px;
+
+        transition: transform 1.9s;   
+        
+        animation: pulse 3s infinite;
+
+      
+
+        }
+        @keyframes pulse{
+            0%{transform: scale(1);}
+            25%{transform: scale(1.05);}
+            50%{transform: scale(1.1);}
+            75%{transform: scale(1.05);}
+            100%{transform: scale(1);}
+        }
+    
+
+        </style>
+        <style> 
+        .img{
+            transition: transform 1.9s;
+
+            animation :pulse 2.5s infinite;
+            
+        }
+        @keyframes pulse{
+            0%{transform: scale(1);}
+            50%{transform: scale(1.1);}
+            100%{transform: scale(1);}
+        }
+    </style>
+    <audio id = "sound" src = "iioio.mp3"></audio>
+
+  <DIV STYLE = "margin-top: ;margin-left:400PX;">  <h1 STYLE = "font-size:40PX;text-align: center;margin-left: 125PX;font-weight:700;">WINNER PRIZE </h1>
+    <H1 STYLE = "filter: brightness(1);margin-top: -5px;margin-left: 70px;">3*3 RUBIX CUBE</H1></DIV>
+
+   
+ <IMG id = "VOL"class = "img"  style = "width: 250px;margin-top: 250px;margin-left: -320px;filter: brightness();cursor: pointer ;"SRC =",.png">
+<div style = "margin-top: 200px;margin-left: -800px;">       <h2 style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight:600;color: blue;margin-top:-10px ;margin-left: 120px;font-size: 40px;text-decoration:overline;text-shadow: gray;text-decoration-color:bl;text-align-last: ;">Instruction</h2>
+</u> 
+<p style = "font-size: 20px;color: GREEN;text-align: center;">YOU HAVE 40 SEC FOR THIS GAME<BR>
+YOU HAVE TO GET 60 SCORE BY COLLECTING COINS.<BR>
+1 COIN = 1 SCORE IF YOU COMPLETE 60 SCORE <BR>
+YOU WILL GET GRAND PRIZE "PYRAMID MAGIC CUBE".<BR>
+IF TIME IS OVER YOU WILL NOT GET ANYTHING</p>
+</div>
+
+<DIV STYLE = "margin-top: ;margin-left: 500PXa">
+<H3 STYLE =  "margin-top: ;margin-left: 00XP;">ENTRY FEE</H3>
+</DIV>
+
+
+       <script>
+       const vol =document.getElementById("VOL")
+       const sound = document.getElementById("sound")
+        vol.addEventListener("click",() => {
+            sound.play();
+            setTimeout(() => {
+                window.location.href="l.html";
+
+
+            },500);
+        })
+    </script>
+    </body>
+
+    
+
+</html>
